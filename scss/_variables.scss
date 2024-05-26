@@ -46,6 +46,8 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+$agd-primary: #058296 !default;
+$agd-light: #f5feff !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -63,7 +65,9 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  "agd-primary": $agd-primary,
+  "agd-light": $agd-light,
 ) !default;
 // scss-docs-end colors-map
 
@@ -298,7 +302,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       $agd-primary !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -436,13 +440,13 @@ $position-values: (
 
 $body-text-align:           null !default;
 $body-color:                $gray-900 !default;
-$body-bg:                   $white !default;
+$body-bg:                   $agd-light !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
 $body-secondary-bg:         $gray-200 !default;
 
-$body-tertiary-color:       rgba($body-color, .5) !default;
-$body-tertiary-bg:          $gray-100 !default;
+$body-tertiary-color:       rgba($body-color, .05) !default;
+$body-tertiary-bg:          rgba($agd-primary, .05) !default;
 
 $body-emphasis-color:       $black !default;
 
@@ -451,10 +455,10 @@ $body-emphasis-color:       $black !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
-$link-shade-percentage:                   20% !default;
+$link-decoration:                         none !default;
+$link-shade-percentage:                   100% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
-$link-hover-decoration:                   null !default;
+$link-hover-decoration:                   none !default;
 
 $stretched-link-pseudo-element:           after !default;
 $stretched-link-z-index:                  1 !default;
@@ -1351,11 +1355,11 @@ $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+$card-cap-bg:                       $white !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
-$card-bg:                           var(--#{$prefix}body-bg) !default;
+$card-bg:                           $white !default;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
 // scss-docs-end card-variables
@@ -1603,8 +1607,8 @@ $list-group-disabled-bg:            $list-group-bg !default;
 $list-group-action-color:           var(--#{$prefix}secondary-color) !default;
 $list-group-action-hover-color:     var(--#{$prefix}emphasis-color) !default;
 
-$list-group-action-active-color:    var(--#{$prefix}body-color) !default;
-$list-group-action-active-bg:       var(--#{$prefix}secondary-bg) !default;
+$list-group-action-active-color:    $white !default;
+$list-group-action-active-bg:       $agd-primary !default;
 // scss-docs-end list-group-variables
 
 
