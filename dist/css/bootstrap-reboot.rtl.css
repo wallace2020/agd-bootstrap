@@ -94,11 +94,11 @@
   --bs-tertiary-bg: rgba(5, 130, 150, 0.05);
   --bs-tertiary-bg-rgb: 5, 130, 150;
   --bs-heading-color: inherit;
-  --bs-link-color: #058296;
-  --bs-link-color-rgb: 5, 130, 150;
+  --bs-link-color: #000;
+  --bs-link-color-rgb: 0, 0, 0;
   --bs-link-decoration: none;
-  --bs-link-hover-color: black;
-  --bs-link-hover-color-rgb: 0, 0, 0;
+  --bs-link-hover-color: #058296;
+  --bs-link-hover-color-rgb: 5, 130, 150;
   --bs-link-hover-decoration: none;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
